@@ -1,16 +1,31 @@
+.debug{
+    background-color: rgba(165, 42, 42, 0.555);
+}
+
+ul{
+    list-style: none;
+}
+
+.long-text{
+    color: burlywood;
+}
+
 .adult{
-    font-weight: bold;
     font-style: italic;
     color: blueviolet;
 }
 
-.joung{
-    font-style: italic;
-    color: rgb(43, 101, 226);
+.young{
+    font-style:oblique;
+    color: white;
 }
 
 .adult{
     font-weight: bold;
     font-style: italic;
     color: rgb(226, 43, 128);
+}
+
+.data, .enemies, .friends{
+    width: calc(100%/3);
 }

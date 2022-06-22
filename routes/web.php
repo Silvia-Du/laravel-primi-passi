@@ -19,12 +19,22 @@ Route::get('/', function () {
         'title'=>'Daisy the dog',
         'daisy'=>[
             'name'=> 'Daisy',
-            'type'=> 'Dog',
+            'type'=> 'dog',
+            'image'=> 'https://ichef.bbci.co.uk/news/480/cpsprodpb/10CB3/production/_114678786_pettog1.jpg',
             'age'=> 3,
             'favourite_game'=> [
-                'runn', 'tennis ball', 'play with others dog', 'Asking for food', 'look for rabbits'
+                'run', 'tennis ball', 'play with others dog', 'Asking for food', 'look for rabbits'
+            ],
+            'enemies'=>[
+                'dogs' =>['buby', 'lilly'],
+                'people' =>['Delivery man', 'Neighbor\'s children'],
+                'Other' => ['ambulance', 'strong noises', 'shower']
+            ],
+
+            'friends' =>['Papy', 'Billy', 'Anyone else giving food', 'Mamy', 'Tho other Daisy', 'My mom']
             ]
-        ]
+
         ];
+
     return view('home', $data);
 });
