@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    $data =[
+        'title'=>'Daisy the dog',
+        'daisy'=>[
+            'name'=> 'Daisy',
+            'type'=> 'Dog',
+            'age'=> 3,
+            'favourite_game'=> [
+                'runn', 'tennis ball', 'play with others dog', 'Asking for food', 'look for rabbits'
+            ]
+        ]
+        ];
+    return view('home', $data);
 });
