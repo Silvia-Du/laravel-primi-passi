@@ -7,7 +7,7 @@ ul{
 }
 
 .long-text{
-    color: burlywood;
+    color: rgb(105, 62, 5);
 }
 
 .adult{
@@ -26,6 +26,26 @@ ul{
     color: rgb(226, 43, 128);
 }
 
-.data, .enemies, .friends{
+.data, .home-img{
+    width: 50%;
+}
+.about-img, .friends, .enemies{
     width: calc(100%/3);
+    font-weight: bold;
+}
+
+.enemies, .friends li{
+    font-size: 1.5rem;
+}
+
+
+._nav ul li{
+    margin: 0 20px;
+}
+._nav ul li a{
+    color: black;
+    font-size: 2rem;
+}
+._nav ul li:hover a{
+    color: rgb(240, 223, 207);
 }

@@ -15,12 +15,12 @@
             <h1>{{ $title }}</h1>
         </header>
 
-        <div class=" main debug mt-3 d-flex justify-content-center">
+        <main class="debug mt-3 d-flex">
             {{-- img --}}
             <img class="m-3" src="{{ $daisy['image'] }}" alt="">
 
             {{-- main data  --}}
-            <div class="data debug p-4">
+            <div class="data debug p-3">
                     <h3>Hey, she is {{ $daisy['name'] }}</h3>
                 <h4>She is a {{ $daisy['type'] }}</h4>
 
@@ -46,15 +46,49 @@
                     @endforeach
                 </ul>
             </div>
+
+            {{-- Enemy --}}
+
+            <div class="enemies debug p-3 m-2">
+                <h4>Her enemies:</h4>
+                <ul>
+                     @foreach ($daisy['enemies'] as $key=>$type)
+                    <li>>{{ $key }}
+                        <ul>
+                            @foreach ($type as $enemie)
+                            <li>{{ $enemie }}</li>
+                            @endforeach
+                        </ul>
+
+                    </li>
+
+                    @endforeach
+                </ul>
+            </div>
+            {{-- friends --}}
+            <div class="friends debug p-3 m-2">
+                <h4>Her friends:</h4>
+                <ul>
+                     @foreach ($daisy['friends'] as $friend)
+
+                        @if (strlen($friend) > 5 )
+                            <li class="long-text">
+                                {{ $friend }}
+                            </li>
+                            @else
+                            <li>
+                                {{ $friend }}
+                            </li>
+
+                        @endif
+
+                    @endforeach
+                </ul>
+            </div>
+
         </main>
 
 
-    </div>
-    <div class="_nav container debug mt-3 py-3">
-        <ul class="d-flex mb-0 debug justify-content-center">
-            <li><a href="http://127.0.0.1:8000/about">About</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
     </div>
 
 
