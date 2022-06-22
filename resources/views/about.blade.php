@@ -10,8 +10,10 @@
 </head>
 <body>
 
-    <header class="debug p-3 text-center pt-5">
+    <header class="container debug p-3 text-center pt-5">
         <h1>ABOUT</h1>
+        <a class="me-2" href="http://127.0.0.1:8000/">Back to Home</a>
+        <a href="http://127.0.0.1:8000/contact">Contact</a
     </header>
     <main>
         <div class="container d-flex">

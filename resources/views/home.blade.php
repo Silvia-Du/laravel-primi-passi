@@ -10,10 +10,10 @@
 </head>
 <body>
 
+    <header class="debug p-3 text-center pt-5">
+        <h1>{{ $title }}</h1>
+    </header>
     <div class="container">
-        <header class="debug p-3 text-center pt-5">
-            <h1>{{ $title }}</h1>
-        </header>
 
         <div class=" main debug mt-3 d-flex justify-content-center">
             {{-- img --}}
@@ -53,7 +53,7 @@
     <div class="_nav container debug mt-3 py-3">
         <ul class="d-flex mb-0 debug justify-content-center">
             <li><a href="http://127.0.0.1:8000/about">About</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="http://127.0.0.1:8000/contact">Contact</a></li>
         </ul>
     </div>
 
